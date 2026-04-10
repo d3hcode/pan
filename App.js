@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={estilos.container}>
       <View style={estilos.card}>
-        <Image
+        <Image //foto de perfil
           style={estilos.imagem}
           source="https://i.pinimg.com/736x/04/6a/07/046a07d96625333916e31bcc0b1ba064.jpg"
         />
@@ -22,17 +22,31 @@ export default function App() {
           <FontAwesome5 name="github" size={38} color="black" />
           <FontAwesome5 name="tiktok" size={38} color="black" />
         </View>
-      </View>
-      <Image style={estilos.imagem2}
+      </View >
+
+      <View style={estilos.fotos}> 
+         <Text style={estilos.textolinha}>_______________________________________________________________________________________</Text>
+      <Image style={estilos.imagem2}// fotos da maomao01
         source="https://i.pinimg.com/736x/ba/87/a8/ba87a83d3b2a0fc3f29818427214239d.jpg"
       />
-
-      <Image style={estilos.imagem2}
+      <Image style={estilos.imagem3}//fotos da maomao02
         source="https://i.pinimg.com/736x/ec/81/18/ec81185cbebdb6643d4e40f5646907bf.jpg"
       />
-      <Image style={estilos.imagem2}
-        source="hhttps://i.pinimg.com/736x/1e/13/3d/1e133d7dd4767b11645f1f65b9d25139.jpg"
+      <Image style={estilos.imagem4} //fotos da maomao03
+        source="https://i.pinimg.com/736x/23/7a/95/237a95635a5fe191c8a346c72d85cc95.jpg"
       />
+      <Text style={estilos.textolinha}>__________________________________________________________________________________________</Text>
+      <Image style={estilos.imagem5} //fotos da maomao04
+        source="https://i.pinimg.com/736x/1a/75/d6/1a75d6c9ae2c2caabadbf0a8d3f89ac9.jpg"
+      />
+      <Image style={estilos.imagem6} //fotos da maomao04
+        source="https://i.pinimg.com/736x/2b/1d/0a/2b1d0aea846d77d2e4878ea1442f7253.jpg"
+      />
+      <Image style={estilos.imagem7} //fotos da maomao04
+        source="https://i.pinimg.com/736x/f5/a8/28/f5a828a168234888a8d1d8335abbd0e6.jpg"
+      />
+       <Text  style={estilos.textolinha}>__________________________________________________________________________</Text>
+      </View>
     </View>
   );
 }
@@ -40,7 +54,7 @@ export default function App() {
 const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#508858ff',
+    backgroundColor: '#eff7e6ff',
     alignItems: 'center',
     paddingTop: 10
   },
@@ -54,29 +68,94 @@ const estilos = StyleSheet.create({
     padding: 10,
     zIndex: 1
   },
+
+  textolinha: {
+    color: '#000000ff',
+    fontSize: 10,
+    height:'flex': '1',
+    minHeight: 20,
+    marginTop: 5,
+    textAlign: 'center'
+  },
+
   imagem: {
     width: '100%',
     height: '100%',
     borderRadius: '50%'
   },
 
+
+  fotos: {    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    width: '100%',
+    height: '80%',
+    padding: 10,
+    margin:5 
+  },
   imagem2: {
-    borderColor: '#e9d3d3ff',
-    borderWidth: 5,
+    borderColor: '#000000ff',
+    borderWidth: 2,
     borderStyle: 'solid',
     width: '30%',
     height: '20%',
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    padding: 5
-    marginTop: 10,
-  },
+    padding: 10,
+    marginTop: 20 
 
+  },
+   imagem3: {
+   borderColor: '#000000ff',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    width: '30%',
+    height: '20%',
+    padding: 10,
+    marginTop: 20
+
+  },
+   imagem4: {
+    borderColor: '#000000ff',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    width: '30%',
+    height: '20%',
+    padding: 10,
+    marginTop: 20
+
+  }, imagem5: {
+   borderColor: '#000000ff',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    width: '30%',
+    height: '20%',
+    padding: 10,
+    marginTop: 20
+
+  },
+ imagem6: {
+   borderColor: '#000000ff',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    width: '30%',
+    height: '20%',
+    padding: 10,
+    marginTop: 20
+
+  },
+   imagem7: {
+    borderColor: '#000000ff',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    width: '30%',
+    height: '20%',
+    padding: 10,
+    marginTop: 20
+
+  },
 
   infos: {
     width: '90%',
-    backgroundColor: '#98a386ff',
+    backgroundColor: '#80a057ff',
     marginTop: -125,
     zIndex: 0
   },
