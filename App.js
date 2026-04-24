@@ -54,7 +54,7 @@ export default function App() {
 const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eff7e6ff',
+    backgroundColor: '#ffffffff',
     alignItems: 'center',
     paddingTop: 10
   },
@@ -72,10 +72,10 @@ const estilos = StyleSheet.create({
   textolinha: {
     color: '#000000ff',
     fontSize: 10,
-    height:'flex': '1',
-    minHeight: 20,
-    marginTop: 5,
-    textAlign: 'center'
+    height:'flex', '1':
+    minHeight, 20:
+    marginTop, 5:
+    textAlign, 'center'
   },
 
   imagem: {
@@ -123,7 +123,7 @@ const estilos = StyleSheet.create({
     marginTop: 20
 
   }, imagem5: {
-   borderColor: '#000000ff',
+    borderColor: '#000000ff',
     borderWidth: 2,
     borderStyle: 'solid',
     width: '30%',
@@ -133,7 +133,7 @@ const estilos = StyleSheet.create({
 
   },
  imagem6: {
-   borderColor: '#000000ff',
+    borderColor: '#000000ff',
     borderWidth: 2,
     borderStyle: 'solid',
     width: '30%',
