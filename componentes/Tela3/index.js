@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-export default function tela2() {
+export default function Tela3() {
     return (
-        <text>Tela 2 </text>
+        <Text>Tela 3 </Text>
     );
 }
