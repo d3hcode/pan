@@ -7,6 +7,4 @@ export default function Tela2() {
         <Text>Tela 2 </Text>
         
     );
-
-    setStatusBarBackgroundColor("pink")
 }

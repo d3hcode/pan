@@ -1,30 +1,8 @@
-import React from "react";
- import { NavigationContainer } from "@react-navigation/native";
- import { createStackNavigator } from "@react-navigation/stack";
+import { registerRootComponent } from 'expo';
 
- import TelaInicial from "./componentes/TelaInicial";
- import Tela2 from "./componentes/Tela2";
- import Tela3 from "./componentes/Tela3";
- import Tela4 from "./componentes/Tela4";
+import App from './App';
 
- const Stack = CreateStackNavigator();
-
- export default function app(){
-  return(
-<NavigationContainer>
-<Stack.Navigator>
- 
- <Stack.Screen name="Tela Inicial" component={TelaInicial}/>
-  <Stack.Screen name="Tela 2" component={Tela2}/>
-  <Stack.Screen name="Tela 3" component={Tela3}/>
-  <Stack.Screen name="Tela 4" component={Tela4}/>
-
-</Stack.Navigator>
-  
-</NavigationContainer>
-
-
-  );
- }
-
- 
+// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
+// It also ensures that whether you load the app in Expo Go or in a native build,
+// the environment is set up appropriately
+registerRootComponent(App);
